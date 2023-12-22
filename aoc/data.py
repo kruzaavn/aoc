@@ -1,7 +1,7 @@
 import requests
 import pathlib
 
-session_id = pathlib.Path().cwd().joinpath('session.txt').read_text()
+session_id = pathlib.Path().cwd().joinpath('session.txt').read_text().strip()
 
 
 def get_data(year, day):
